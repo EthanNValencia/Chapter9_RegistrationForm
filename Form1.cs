@@ -15,6 +15,7 @@ namespace Chapter9_RegistrationForm
         public Form1()
         {
             InitializeComponent();
+            this.lblMsg.Text = " ";
         }
 
         private void ComputeCost_CheckedChanged(object sender, EventArgs e) // Example 9-21, pg 520
@@ -36,7 +37,26 @@ namespace Chapter9_RegistrationForm
             {
                 cost += 100;
             }
+
+            if (this.radBeginner.Checked)
+            {
+                cost += 15;
+                this.lblMsg.Text = "Begginer extra $15 charge";
+            } else if (this.radIntermediate.Checked)
+            {
+                cost += 5;
+                this.lblMsg.Text = "Imtermediate extra $5 charge";
+            } else if (this.radAdvanced.Checked)
+            {
+                cost -= 15;
+                this.lblMsg.Text = "Advanced $15 Discount";
+            } else
+            {
+                this.lblMsg.Text = " ";
+            }
+
             this.txtResult.Text = cost.ToString("C");
+
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)

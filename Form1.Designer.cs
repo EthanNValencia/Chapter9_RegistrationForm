@@ -39,9 +39,10 @@ namespace Chapter9_RegistrationForm
             this.ckBoxSnorkel = new System.Windows.Forms.CheckBox();
             this.ckBoxDive = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radAdvanced = new System.Windows.Forms.RadioButton();
+            this.radIntermediate = new System.Windows.Forms.RadioButton();
+            this.radBeginner = new System.Windows.Forms.RadioButton();
+            this.lblMsg = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace Chapter9_RegistrationForm
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(102, 378);
+            this.txtResult.Location = new System.Drawing.Point(47, 363);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(125, 27);
             this.txtResult.TabIndex = 1;
@@ -80,7 +81,7 @@ namespace Chapter9_RegistrationForm
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 381);
+            this.label3.Location = new System.Drawing.Point(50, 340);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 4;
@@ -131,56 +132,69 @@ namespace Chapter9_RegistrationForm
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radAdvanced);
+            this.groupBox1.Controls.Add(this.radIntermediate);
+            this.groupBox1.Controls.Add(this.radBeginner);
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkRed;
             this.groupBox1.Location = new System.Drawing.Point(214, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(155, 171);
+            this.groupBox1.Size = new System.Drawing.Size(155, 166);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Skill Level";
             // 
-            // radioButton3
+            // radAdvanced
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(22, 123);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(96, 24);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Advanced";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.radAdvanced.AutoSize = true;
+            this.radAdvanced.Location = new System.Drawing.Point(22, 123);
+            this.radAdvanced.Name = "radAdvanced";
+            this.radAdvanced.Size = new System.Drawing.Size(96, 24);
+            this.radAdvanced.TabIndex = 2;
+            this.radAdvanced.TabStop = true;
+            this.radAdvanced.Text = "Advanced";
+            this.radAdvanced.UseVisualStyleBackColor = true;
+            this.radAdvanced.CheckedChanged += new System.EventHandler(this.ComputeCost_CheckedChanged);
             // 
-            // radioButton2
+            // radIntermediate
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(22, 82);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(115, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Intermediate";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radIntermediate.AutoSize = true;
+            this.radIntermediate.Location = new System.Drawing.Point(22, 82);
+            this.radIntermediate.Name = "radIntermediate";
+            this.radIntermediate.Size = new System.Drawing.Size(115, 24);
+            this.radIntermediate.TabIndex = 1;
+            this.radIntermediate.TabStop = true;
+            this.radIntermediate.Text = "Intermediate";
+            this.radIntermediate.UseVisualStyleBackColor = true;
+            this.radIntermediate.CheckedChanged += new System.EventHandler(this.ComputeCost_CheckedChanged);
             // 
-            // radioButton1
+            // radBeginner
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(22, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Beginner";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radBeginner.AutoSize = true;
+            this.radBeginner.Location = new System.Drawing.Point(22, 41);
+            this.radBeginner.Name = "radBeginner";
+            this.radBeginner.Size = new System.Drawing.Size(89, 24);
+            this.radBeginner.TabIndex = 0;
+            this.radBeginner.TabStop = true;
+            this.radBeginner.Text = "Beginner";
+            this.radBeginner.UseVisualStyleBackColor = true;
+            this.radBeginner.CheckedChanged += new System.EventHandler(this.ComputeCost_CheckedChanged);
+            // 
+            // lblMsg
+            // 
+            this.lblMsg.AutoSize = true;
+            this.lblMsg.Location = new System.Drawing.Point(204, 366);
+            this.lblMsg.Name = "lblMsg";
+            this.lblMsg.Size = new System.Drawing.Size(74, 20);
+            this.lblMsg.TabIndex = 10;
+            this.lblMsg.Text = "          xxx ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(417, 450);
+            this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ckBoxDive);
             this.Controls.Add(this.ckBoxSnorkel);
@@ -191,6 +205,7 @@ namespace Chapter9_RegistrationForm
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.textBox1);
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -212,9 +227,10 @@ namespace Chapter9_RegistrationForm
         private System.Windows.Forms.CheckBox ckBoxSnorkel;
         private System.Windows.Forms.CheckBox ckBoxDive;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radAdvanced;
+        private System.Windows.Forms.RadioButton radIntermediate;
+        private System.Windows.Forms.RadioButton radBeginner;
+        private System.Windows.Forms.Label lblMsg;
     }
 }
 
