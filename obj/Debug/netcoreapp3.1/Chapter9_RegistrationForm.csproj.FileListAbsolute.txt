@@ -1,0 +1,16 @@
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.exe
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.deps.json
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.runtimeconfig.json
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.runtimeconfig.dev.json
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.dll
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\bin\Debug\netcoreapp3.1\Chapter9_RegistrationForm.pdb
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.csproj.AssemblyReference.cache
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.Form1.resources
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.csproj.GenerateResource.cache
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.AssemblyInfoInputs.cache
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.AssemblyInfo.cs
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.csproj.CoreCompileInputs.cache
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.dll
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.pdb
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.genruntimeconfig.cache
+C:\Users\Ethan\source\repos\Chapter9_RegistrationForm\obj\Debug\netcoreapp3.1\Chapter9_RegistrationForm.Properties.Resources.resources

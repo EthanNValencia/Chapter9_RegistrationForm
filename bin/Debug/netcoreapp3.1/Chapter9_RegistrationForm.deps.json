@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Chapter9_RegistrationForm/1.0.0": {
+        "runtime": {
+          "Chapter9_RegistrationForm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Chapter9_RegistrationForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
